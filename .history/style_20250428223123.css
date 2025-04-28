@@ -1,0 +1,21 @@
+/* Базовые стили для читаемости */
+.calculator {
+  margin: 20px;
+  background-color: aqua;
+}
+
+.display-container {
+  margin-bottom: 10px;
+}
+
+#display {
+  width: 150px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+}

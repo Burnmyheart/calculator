@@ -1,0 +1,65 @@
+/* Базовые стили для читаемости */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  background-color: #649fcf;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 440px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.display-container {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#display {
+  width: 300px;
+  height: 50px;
+  padding: 2px 5px;
+  text-align: right;
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+}
+
+.calculator > div:not(.display-container) {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  margin: 2px;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.clear {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.calculate {
+  background-color: #f5f10f;
+}
+
+.operation {
+  background-color: #ef9efa98;
+}
