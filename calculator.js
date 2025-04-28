@@ -1,12 +1,9 @@
-// Получаем элемент дисплея
 const display = document.getElementById("display");
 
-// Переменные для хранения данных
 let firstNumber = "";
 let operator = "";
 let newNumber = false;
 
-// Добавление цифры
 function addNumber(num) {
   if (newNumber) {
     display.value = num;
@@ -16,7 +13,6 @@ function addNumber(num) {
   }
 }
 
-// Добавление операции
 function addOperation(op) {
   if (display.value !== "") {
     firstNumber = display.value;
@@ -25,7 +21,6 @@ function addOperation(op) {
   }
 }
 
-// Вычисление результата
 function calculate() {
   if (firstNumber && operator && display.value) {
     let result;
@@ -58,7 +53,6 @@ function calculate() {
   }
 }
 
-// Очистка дисплея
 function clearDisplay() {
   display.value = "";
   firstNumber = "";
